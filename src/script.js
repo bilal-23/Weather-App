@@ -1,16 +1,4 @@
-const input = document.querySelector('.search-city');
-const searchBtn = document.querySelector('.fas');
-const icon = document.querySelector('.weather-img')
-const temperature = document.querySelector('.temp-data');
-const city = document.querySelector('.city');
-const country = document.querySelector('.country');
-const maxTemperature = document.querySelector('.max-temp-text');
-const minTemperature = document.querySelector('.min-temp-text');
-const pressure = document.querySelector('.pressure-text');
-const humidity = document.querySelector('.humidity');
-const windSpeed = document.querySelector('.wind-text');
 
-const parentElement = document.querySelector('.app')
 
 /////////////////////////////////
 const KEY = `cb7fa1df4f862242c79d99d4e50959e6`;
@@ -87,12 +75,12 @@ function generateMarkup(data) {
         class="max-temp-icon extra-data-icon"
         /> -->
         <h4 class="max-temp">Max Temp : </h4>
-        <p class="max-temp-text">${data.main.temp_max} °C</p>
+        <p class="max-temp-text">${data.main.temp_max - 273.15} °C</p>
     </div>
     <div class="min-temp extra-data">
 
       <h4 class="min-temp">Min Temp : </h4>
-      <p class="min-temp-text">${data.main.temp_min} °C</p>
+      <p class="min-temp-text">${data.main.temp_min - 273.15} °C</p>
 
     </div>
     <div class="pressure extra-data">
