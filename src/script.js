@@ -75,12 +75,12 @@ function generateMarkup(data) {
         class="max-temp-icon extra-data-icon"
         /> -->
         <h4 class="max-temp">Max Temp : </h4>
-        <p class="max-temp-text">${data.main.temp_max - 273.15} °C</p>
+        <p class="max-temp-text">${(data.main.temp_max - 273.15).toFixed(0)} °C</p>
     </div>
     <div class="min-temp extra-data">
 
       <h4 class="min-temp">Min Temp : </h4>
-      <p class="min-temp-text">${data.main.temp_min - 273.15} °C</p>
+      <p class="min-temp-text">${(data.main.temp_min - 273.15).toFixed(0)} °C</p>
 
     </div>
     <div class="pressure extra-data">
