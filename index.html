@@ -12,7 +12,7 @@
     />
 
     <link rel="stylesheet" href="src/style.css" />
-    <link rel="stylesheet" href="src/media.css">
+    <!-- <link rel="stylesheet" href="src/media.css"> -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
 
@@ -33,24 +33,41 @@
           <img src="src/img/earth.svg" alt="" class="logo-img">
         </div>
         <div class="weather-main">
-            <div class="search-input">
-              <input type="text" class="search-city" placeholder="Search City">
+            
+              <form action="" class="form search-input">
+              <input type="text" class="search-city" placeholder="Search City ">
+              
+              <button class="form__btn">OK</button>
               <i class="fas fa-search-location"></i>
-            </div>
-            <div class="app">            <div class="row-1">
-              <div class="weather-icon">
-                <img src="src/img/Clouds.svg" alt="" class="weather-img">
+            </form>
+           
+            <div class="app">   
+
+         
+              <div class="placeholder-weather">
+                <h2>Weather App</h2>
+              <img src="src/img/placeholder.svg" alt="">
               </div>
-              <h2 class="temp"> <span class="temp-data">34</span> °C</h2>
-              <h3 class="weather-desc">Cloudy</h3>
-              <h1 class="city">Indore</h1>
-            </div>
+
+
+              <!-- <div class="spinner">
+                <img src="src/img/loading.svg" alt="">
+              </div> -->
+
+
+
+                <!-- <div class="row-1">
+                  <div class="weather-icon">
+                  <img src="src/img/Clouds.svg" alt="" class="weather-img">
+                  </div>
+                       <h2 class="temp"> <span class="temp-data">34</span> °C</h2>
+                        <h3 class="weather-desc">Cloudy</h3>
+                        <h1 class="city">Indore</h1>
+                   </div>
             <div class="row-2">
               <div class="max-temp extra-data">
                 
-                  <!-- <img src="https://img.icons8.com/plasticine/100/000000/long-arrow-up.png"
-                  class="max-temp-icon extra-data-icon"
-                  /> -->
+               
                   <h4 class="max-temp">Max Temp :</h4>
                   <p class="max-temp-text">35 °C</p>
               </div>
@@ -64,21 +81,21 @@
 
                 <h4 class="pressure">Pressure :</h4>
                 <p class="pressure-text">1005</p>
-<!--//hPA -->
+
               </div>
               <div class="humidity extra-data">
 
                 <h4 class="humidity-temp">Humidity :</h4>
                 <p class="humidity-text">11</p>
-                <!-- % -->
+               
               </div>
               <div class="wind extra-data">
 
                 <h4 class="wind-temp">Wind Speed :</h4>
                 <p class="wind-text">4.12m/s</p>
-<!--m/s -->
+
               </div>
-            </div>
+            </div> -->
           </div>
 
         </div>
